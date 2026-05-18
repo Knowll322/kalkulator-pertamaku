@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Aurora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="scene" aria-label="Kalkulator Aurora">
+      <div class="energy-field" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <section class="calculator" aria-label="Kalkulator">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow">Aurora Calc</p>
+            <h1>Kalkulator</h1>
+          </div>
+          <button class="icon-button" id="themeToggle" type="button" aria-label="Ganti tema">
+            <span class="sun"></span>
+          </button>
+        </div>
+
+        <div class="display" aria-live="polite">
+          <div class="history" id="history">Siap menghitung</div>
+          <div class="expression" id="expression">0</div>
+          <div class="result" id="result">0</div>
+        </div>
+
+        <div class="keypad" aria-label="Tombol kalkulator">
+          <button class="key utility" data-action="clear" type="button">AC</button>
+          <button class="key utility" data-action="backspace" type="button">⌫</button>
+          <button class="key utility" data-value="%" type="button">%</button>
+          <button class="key operator" data-value="/" type="button">÷</button>
+
+          <button class="key" data-value="7" type="button">7</button>
+          <button class="key" data-value="8" type="button">8</button>
+          <button class="key" data-value="9" type="button">9</button>
+          <button class="key operator" data-value="*" type="button">×</button>
+
+          <button class="key" data-value="4" type="button">4</button>
+          <button class="key" data-value="5" type="button">5</button>
+          <button class="key" data-value="6" type="button">6</button>
+          <button class="key operator" data-value="-" type="button">−</button>
+
+          <button class="key" data-value="1" type="button">1</button>
+          <button class="key" data-value="2" type="button">2</button>
+          <button class="key" data-value="3" type="button">3</button>
+          <button class="key operator" data-value="+" type="button">+</button>
+
+          <button class="key wide" data-value="0" type="button">0</button>
+          <button class="key" data-value="." type="button">.</button>
+          <button class="key equals" data-action="equals" type="button">=</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
